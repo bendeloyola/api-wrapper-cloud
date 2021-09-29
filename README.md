@@ -14,7 +14,7 @@ Usage
      
    result = RestClient::Request.execute(
       method: http_method, 
-      url: "https://api.rawg.io/api?key=qweawe23213",
+      url: "path",
       headers: {'Content-Type' => 'application/json'}
     )
 
