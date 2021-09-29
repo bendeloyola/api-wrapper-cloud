@@ -1,24 +1,23 @@
-# README
+A Ruby API for RAWG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation
+ 
+ 1. Rest client inside of Gemfile
+     - gem 'rest-client', '~> 2.1'
+ 2.  Run bundle install
 
-Things you may want to cover:
+Usage
+ 
+ 1. Create an account on rawg.io and get an apikey.
 
-* Ruby version
+ Configure
+     
+   result = RestClient::Request.execute(
+      method: http_method, 
+      url: "https://api.rawg.io/api?key=qweawe23213",
+      headers: {'Content-Type' => 'application/json'}
+    )
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Get a list of Game
+    
+    Rawg::Client.games
