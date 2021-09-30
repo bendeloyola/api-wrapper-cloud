@@ -20,4 +20,4 @@ Usage
 
  Get a list of Game
     
-    Rawg::Client.games
+    localhost:3000/api/games/
