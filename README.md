@@ -2,9 +2,12 @@ A Ruby API WRAP for RAWG
 
 Installation
  
- 1. Rest client inside of Gemfile
+ 1. Use rest client inside of Gemfile
      - gem 'rest-client', '~> 2.1'
  2.  Run bundle install
+ 3.  Run Rails Server
+     - rails s
+
 
 Usage
  
@@ -18,6 +21,30 @@ Usage
       headers: {'Content-Type' => 'application/json'}
     )
 
- Get a list of Game
+ Get a list of Game.
     
     localhost:3000/api/games/
+
+Get a list of game creators.
+   
+    localhost:3000/api/creators/
+
+Get a list of game developers.
+  
+    localhost:3000/api/developers/
+    
+Get a list of video game genres.
+
+     localhost:3000/api/genres/
+     
+Get a list of video game platforms.
+
+     localhost:3000/api/platforms/
+     
+Get a list of parent platforms.
+
+     localhost:3000/api/platforms/parents_lists
+ 
+Get a list of video game publishers.
+  
+     localhost:3000/api/publishers
