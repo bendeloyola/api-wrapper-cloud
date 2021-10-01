@@ -1,24 +1,50 @@
-# README
+A Ruby API WRAP for RAWG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation
+ 
+ 1. Use rest client inside of Gemfile
+     - gem 'rest-client', '~> 2.1'
+ 2.  Run bundle install
+ 3.  Run Rails Server
+     - rails s
 
-Things you may want to cover:
 
-* Ruby version
+Usage
+ 
+ 1. Create an account on rawg.io and get an apikey.
 
-* System dependencies
+ Configure
+     
+   result = RestClient::Request.execute(
+      method: http_method, 
+      url: "path",
+      headers: {'Content-Type' => 'application/json'}
+    )
 
-* Configuration
+ Get a list of Game.
+    
+    localhost:3000/api/games/
 
-* Database creation
+Get a list of game creators.
+   
+    localhost:3000/api/creators/
 
-* Database initialization
+Get a list of game developers.
+  
+    localhost:3000/api/developers/
+    
+Get a list of video game genres.
 
-* How to run the test suite
+     localhost:3000/api/genres/
+     
+Get a list of video game platforms.
 
-* Services (job queues, cache servers, search engines, etc.)
+     localhost:3000/api/platforms/
+     
+Get a list of parent platforms.
 
-* Deployment instructions
-
-* ...
+     localhost:3000/api/platforms/parents_lists
+ 
+Get a list of video game publishers.
+  
+     localhost:3000/api/publishers
