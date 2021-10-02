@@ -30,6 +30,7 @@ Usage
       headers: {'Content-Type' => 'application/json'}
     )
 
+Accessing via controller using https://www.postman.com/ 
 
 Get a list of Game.
     
