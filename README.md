@@ -52,3 +52,7 @@ Get a list of video game publishers.
 Get a list of video game storefronts.
      
      localhost:3000/api/stores/
+
+Get a list of tags.
+
+      localhost:3000/api/tags/
