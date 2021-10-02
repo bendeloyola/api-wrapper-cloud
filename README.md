@@ -1,10 +1,13 @@
-A Ruby API WRAP for RAWG
+A Ruby API for RAWG.IO
 
 Installation
  
  1. Use rest client inside of Gemfile
      - gem 'rest-client', '~> 2.1'
+     
  2.  Run bundle install
+     - bundle install
+
  3.  Run Rails Server
      - rails s
 
@@ -12,6 +15,12 @@ Installation
 Usage
  
  1. Create an account on rawg.io and get an apikey.
+ 2. Documentation link: https://api.rawg.io/docs/
+ 
+     TOKEN = 'YOURAPIKEY'
+
+     BASE_URL = https://api.rawg.io/api
+
 
  Configure
      
@@ -21,7 +30,9 @@ Usage
       headers: {'Content-Type' => 'application/json'}
     )
 
- Get a list of Game.
+Accessing via controller using https://www.postman.com/ 
+
+Get a list of Game.
     
     localhost:3000/api/games/
 
@@ -43,8 +54,16 @@ Get a list of video game platforms.
      
 Get a list of parent platforms.
 
-     localhost:3000/api/platforms/parents_lists
+     localhost:3000/api/platforms/parents_lists/
  
 Get a list of video game publishers.
   
-     localhost:3000/api/publishers
+     localhost:3000/api/publishers/
+
+Get a list of video game storefronts.
+     
+     localhost:3000/api/stores/
+
+Get a list of tags.
+
+      localhost:3000/api/tags/
