@@ -6,6 +6,7 @@ Installation
      - gem 'rest-client', '~> 2.1'
      
  2.  Run bundle install
+     - bundle install
 
  3.  Run Rails Server
      - rails s
@@ -14,6 +15,12 @@ Installation
 Usage
  
  1. Create an account on rawg.io and get an apikey.
+ 2. Documentation link: https://api.rawg.io/docs/
+ 
+ TOKEN = 'YOUR TOKEN KEY'
+ 
+ BASE_URL = https://api.rawg.io/api
+
 
  Configure
      
@@ -23,7 +30,8 @@ Usage
       headers: {'Content-Type' => 'application/json'}
     )
 
- Get a list of Game.
+
+Get a list of Game.
     
     localhost:3000/api/games/
 
