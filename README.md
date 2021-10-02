@@ -15,8 +15,10 @@ Usage
 
  Configure
      
-   result = RestClient::Request.execute(
+   RestClient::Request.execute(
+   
       method: http_method, 
+      
       url: "path",
       headers: {'Content-Type' => 'application/json'}
     )
