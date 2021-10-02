@@ -31,5 +31,13 @@ module Rawg
     def self.publishers
       response = Request.call('get', "/publishers")
     end
+
+    def self.stores
+      response = Request.call('get', "/stores")
+    end
+
+    def self.tags
+      response = Request.call('get', "/tags")
+    end
   end
 end
