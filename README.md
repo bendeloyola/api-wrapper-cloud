@@ -48,3 +48,7 @@ Get a list of parent platforms.
 Get a list of video game publishers.
   
      localhost:3000/api/publishers
+
+Get a list of video game storefronts.
+     
+     localhost:3000/api/stores
