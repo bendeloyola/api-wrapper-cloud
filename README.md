@@ -4,7 +4,9 @@ Installation
  
  1. Use rest client inside of Gemfile
      - gem 'rest-client', '~> 2.1'
+     
  2.  Run bundle install
+
  3.  Run Rails Server
      - rails s
 
@@ -15,10 +17,8 @@ Usage
 
  Configure
      
-   RestClient::Request.execute(
-   
+   result = RestClient::Request.execute(
       method: http_method, 
-      
       url: "path",
       headers: {'Content-Type' => 'application/json'}
     )
