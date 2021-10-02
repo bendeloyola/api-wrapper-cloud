@@ -1,4 +1,4 @@
-A Ruby API WRAP for RAWG.IO
+A Ruby API for RAWG.IO
 
 Installation
  
