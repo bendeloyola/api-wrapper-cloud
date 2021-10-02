@@ -17,7 +17,7 @@ Usage
  1. Create an account on rawg.io and get an apikey.
  2. Documentation link: https://api.rawg.io/docs/
  
- TOKEN = 'YOUR TOKEN KEY'
+ TOKEN = 'YOURAPIKEY'
  
  BASE_URL = https://api.rawg.io/api
 
